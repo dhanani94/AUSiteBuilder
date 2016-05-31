@@ -1,0 +1,39 @@
+<div class="container">
+	<a ng-click="" class="right" style="margin : 10px; text-decoration: none; cursor: hand;"><i class="fa fa-info-circle"></i> Help</a>
+    <textarea ng-model='fileData'></textarea>
+    <a href="/#/editSelect" class="btn btn-default" style="margin-top : 10px;"><i class="fa fa-arrow-left"></i> Back</a>
+    <a ng-click="saveBtn()" class="btn btn-success right" style="margin-top : 10px;"><i class="fa fa-floppy-o"></i> Save</a>
+	<a href="{{pageURL}}" class="btn btn-primary right" style="margin : 10px;"><i class="fa fa-eye"></i> View Page</a>
+</div>
+
+
+<script type="text/javascript">
+
+$("textarea").keydown(function(e) {
+    if(e.keyCode === 9) { // tab was pressed
+        // get caret position/selection
+        var start = this.selectionStart;
+            end = this.selectionEnd;
+
+        var $this = $(this);
+
+        // set textarea value to: text before caret + tab + text after caret
+        $this.val($this.val().substring(0, start)
+                    + "\t"
+                    + $this.val().substring(end));
+
+        // put caret at right position again
+        this.selectionStart = this.selectionEnd = start + 1;
+
+        // prevent the focus lose
+        return false;
+    }
+});
+
+// $("textarea").addEvent('keydown',function(event) {
+// 	if((event.control || event.meta) && event.key == 's') {
+// 		event.stop();
+// 		alert("saving?");
+// 	}
+// });
+</script>

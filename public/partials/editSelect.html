@@ -1,0 +1,12 @@
+
+	<a href="{{'/sites/'+ participant.ref +'.html'}}" class="darken">
+		<div class="col-sm-4 col-md-3 col-xs-6" ng-repeat="participant in names" style="padding-bottom: 15px;">
+	    <img src="{{'images/' + participant.image}}" height="225" width="225" class="img img-dark"/>
+		  <div class="caption post-content">
+		  	<a href=""></a>
+				<h3>{{participant.name}}</h3>
+				<a href="#/editPage/{{participant.ref}}" class="btn-cust btn" role="button"><i class="fa fa-code"></i> Edit Page</a>
+				<!-- <a href="{{'/sites/'+ participant.ref +'.html'}}" class="btn btn-cust" role="button">View</a> -->
+		  </div>
+	  </div>
+  </a>
