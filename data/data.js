@@ -2,13 +2,14 @@ var data = {};
 
 data.group1 = [
 	{name : "Taufiq Bha", ref : "TaufiqBha"},
-	{name : "Zoya Bai", ref : "Zoya Bai"}
+	{name : "Zoya Bai", ref : "Zoya Bai"},
 	{name : "Neha Momin", ref : "NehaMomin"},
 	{name : "Shayna Husein", ref : "ShaynaHusein"},
 	{name : "Mishaal Gilani", ref : "MishaalGilani"},
 	{name : "Alishah Gilani", ref : "AlishahGilani"},
 	{name : "Tahsin Thaver", ref : "TahsinThaver"},
 	{name : "Sara Maherali", ref : "SaraMaherali"},
+	{name : "Sahil Bha", ref : "SahilBha"}
 	{name : "Manisha Dhanani", ref : "ManishaDhanani"},
 	{name : "Faiz Shamji", ref : "FaizShamji"},
 	{name : "Kiran Bai", ref : "KiranBai"},
@@ -21,7 +22,6 @@ data.group1 = [
 	{name : "Wasim Meghani", ref : "WasimMeghani"},
 	{name : "Alishan Ali", ref : "AlishanAli"},
 	{name : "Aliza Ali", ref : "AlizaAli"},
-	{name : "Sahil Bha", ref : "SahilBha"},
 ];
 
 data.group2 = [
