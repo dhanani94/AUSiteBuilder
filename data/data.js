@@ -25,7 +25,7 @@ data.group1 = [
 ];
 
 data.group2 = [
-	{name : "Taufiq Bha", ref : "TaufiqBha"},
+	{name : "Taufiq Bha", ref : "TaufiqBha2"},
 	{name: "Anusha Jiwani", ref : "AnushaJiwani"},
 	{name: "Innara Basria", ref : "InnaraBasria"},
 	{name: "Anmol Momin", ref : "AnmolMomin"},
@@ -43,7 +43,7 @@ data.group2 = [
 	{name: "Arsh Momin", ref : "ArshMomin"},
 	{name: "Rahil Patel", ref : "RahilPatel"},
 	{name: "Zaryab Prasla", ref : "ZaryabPrasla"},
-	{name : "Zoya Bai", ref : "ZoyaBai"}
+	{name : "Zoya Bai", ref : "ZoyaBai2"}
 	// {name : "Senior Staff", ref : "SeniorStaff"}
 ]
 
