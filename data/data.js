@@ -9,7 +9,7 @@ data.group1 = [
 	{name : "Alishah Gilani", ref : "AlishahGilani"},
 	{name : "Tahsin Thaver", ref : "TahsinThaver"},
 	{name : "Sara Maherali", ref : "SaraMaherali"},
-	{name : "Sahil Bha", ref : "SahilBha"}
+	{name : "Sahil Bha", ref : "SahilBha"},
 	{name : "Manisha Dhanani", ref : "ManishaDhanani"},
 	{name : "Faiz Shamji", ref : "FaizShamji"},
 	{name : "Kiran Bai", ref : "KiranBai"},
@@ -21,7 +21,7 @@ data.group1 = [
 	{name : "Shayan Ali", ref : "ShayanAli"},
 	{name : "Wasim Meghani", ref : "WasimMeghani"},
 	{name : "Alishan Ali", ref : "AlishanAli"},
-	{name : "Aliza Ali", ref : "AlizaAli"},
+	{name : "Aliza Ali", ref : "AlizaAli"}
 ];
 
 data.group2 = [

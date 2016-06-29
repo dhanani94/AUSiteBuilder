@@ -5,7 +5,7 @@ var passportlocal 	= require('passport-local');
 
 
 function verifyCredentials (username, password, done){
-	if (password == 'lol'){
+	if (password == 'au2k16'){
 		done (null, {user : username});
 	} else if (password == 'lol') {
 		done (null, {user : username});
