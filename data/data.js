@@ -43,8 +43,8 @@ data.group2 = [
 	{name: "Arsh Momin", ref : "ArshMomin"},
 	{name: "Rahil Patel", ref : "RahilPatel"},
 	{name: "Zaryab Prasla", ref : "ZaryabPrasla"},
-	{name : "Zoya Bai", ref : "ZoyaBai2"}
-	// {name : "Senior Staff", ref : "SeniorStaff"}
+	{name : "Zoya Bai", ref : "ZoyaBai2"},
+	{name : "Alia Bai", ref : "AliaBai"}
 ]
 
 module.exports = data;
