@@ -64,6 +64,8 @@ textarea {
 .h1, .h2, .h3, h1, h2, h3 {
     margin-top: 5px;
     margin-bottom: 10px;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 .btn-cust {
