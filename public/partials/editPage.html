@@ -1,9 +1,165 @@
 <div class="container">
-	<a ng-click="" class="right" style="margin : 10px; text-decoration: none; cursor: hand;"><i class="fa fa-info-circle"></i> Help</a>
+
+
+
+    <a style="margin : 10px; text-decoration: none; cursor: hand;" data-toggle="modal" data-target="#myModal3"><i class="fa fa-info-circle"></i> Change Profile Image</a>
+
+
+    <a class="right" style="margin : 10px; text-decoration: none; cursor: hand;" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle"></i> HTML Help</a>
+	<a class="right" style="margin : 10px; text-decoration: none; cursor: hand; color: green;" data-toggle="modal" data-target="#myModal2"><i class="fa fa-info-circle"></i> CSS Help</a>
     <textarea ng-model='fileData'></textarea>
     <a href="/#/editSelect" class="btn btn-default" style="margin-top : 10px;"><i class="fa fa-arrow-left"></i> Back</a>
     <a ng-click="saveBtn()" class="btn btn-success right" style="margin-top : 10px;"><i class="fa fa-floppy-o"></i> Save</a>
 	<a href="{{pageURL}}" class="btn btn-primary right" style="margin : 10px;"><i class="fa fa-eye"></i> View Page</a>
+
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">HTML Basics</h4>
+            <a href="http://www.w3schools.com/html"> Click here for W3's HTML Info</a>
+          </div>
+          <div class="modal-body">
+
+            <h3>HTML Elements</h3>
+            <p>HTML elements are written with a start tag, with an end tag, with the content in between</p>
+            <code><span style="color:brown"><span style="color:mediumblue">&lt;</span>tagname<span style="color:mediumblue">&gt;</span></span>content<span style="color:brown"><span style="color:mediumblue">&lt;</span>/tagname<span style="color:mediumblue">&gt;</span></span></code>
+
+            <h4>HTML Basics</h4>
+            All HTML documents must start with a type declaration: <code>&lt;!DOCTYPE html></code>
+            The text between <code>&lt;html></code> and <code>&lt;/html></code> describes an HTML document </br>
+            The text between <code>&lt;head></code> and <code>&lt;/head></code> provides information about the document </br>
+            The text between <code>&lt;title></code> and <code>&lt;/title></code> provides a title for the document </br>
+            The text between <code>&lt;body></code> and <code>&lt;/body></code> describes the visible page content </br>     
+
+            <h4>Headings</h4>
+            <p>Headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>           
+
+
+            <h4>Paragraphs</h4>
+            <p>The HTML <code>&lt;p&gt;</code> element defines a paragraph.</p>
+            
+            <h4>Horizontal Rules</h4>
+            <p> The <code>&lt;hr&gt;</code> tag creates a horizontal line in an HTML page.</p>
+            
+            <h4>Line Breaks</h4>
+            <p>The HTML <code>&lt;br&gt;</code> element defines a line break.</p>
+            
+            <h4>Images</h4>
+            <p>In HTML, images are defined with the  <code>&lt;img&gt;</code> tag.</p>
+            <code>&lt;img src="http://www.coolwebsite.com/imageURL" alt="img_info"></code> 
+
+            <h4>Tables</h4>
+            <p>Tables are defined with the <code>&lt;table&gt;</code> tag.</p>
+            <p>Tables are divided into table rows with the <code>&lt;tr&gt;</code> tag.</p>
+            <p>Table rows are divided into table data with the <code>&lt;td&gt;</code> tag.</p>
+            <p>A table row can also be divided into table headings with the <code>&lt;th&gt;</code> tag.</p>
+
+
+            <code width="100%">
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>table<span style="color:red"> border<span style="color:mediumblue">="1"</span> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Jill<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Smith<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>50<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>tr<span style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Eve<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>Jackson<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span> <br>
+                &nbsp;&nbsp;&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>td<span style="color:mediumblue">&gt;</span></span>94<span style="color:brown"><span style="color:mediumblue">&lt;</span>/td<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>/tr<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/table<span style="color:mediumblue">&gt;</span></span>
+            </code>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">CSS Basics</h4>
+          </div>
+          <div class="modal-body">
+            <h3>CSS References</h3>
+            <a href="http://www.lesliefranke.com/files/reference/csscheatsheet.html">CSS Cheatsheet</a>
+            <ul>
+                <li><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</li>
+                <li>CSS describes how <b>HTML elements are to be displayed on screen, paper, or in other media</b> </li>
+                <li>CSS saves <b>a lot of work</b>. It can control the layout of multiple web pages all at once </li>
+            </ul>
+            <img src="http://www.w3schools.com/css/selector.gif">
+            <h3>Importing Bootstrap</h3><a href="http://getbootstrap.com/components/">Bootstrap Components</a> </br><br>
+            <p>Have the following link element in the &lt;head> section of your HTML page  </p>
+            <code>&lt;link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css"></code>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="api/uploadImg" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="ogname" value="{{ref}}"/>
+        <div id="myModal3" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Select an image to upload</h4>
+              </div>
+              <div class="modal-body">
+
+                  <input type="file" name="image"> <br>
+
+              </div>
+              <div class="modal-footer">
+                  <input type="submit" class="btn btn-default" value="Upload Image">
+                  <!-- <input type="submit" class="btn btn-default" data-dismiss="modal" value="Upload Image"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </form>
+
+
+
+
+    <form>
+      <!-- NAME -->
+      <div id="name-group" class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Bruce Wayne" ng-model="formData.name">
+        <span class="help-block"></span>
+      </div>
+
+      <!-- SUPERHERO NAME -->
+      <div id="superhero-group" class="form-group">
+        <label>Superhero Alias</label>
+        <input type="text" name="superheroAlias" class="form-control" placeholder="Caped Crusader" ng-model="formData.superheroAlias">
+        <span class="help-block"></span>
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit" class="btn btn-success btn-lg btn-block">
+        <span class="glyphicon glyphicon-flash"></span> Submit!
+      </button>
+    </form>
+
+    <!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
+    <pre>
+        {{ formData }}
+    </pre>
+
 </div>
 
 
@@ -30,10 +186,4 @@ $("textarea").keydown(function(e) {
     }
 });
 
-// $("textarea").addEvent('keydown',function(event) {
-// 	if((event.control || event.meta) && event.key == 's') {
-// 		event.stop();
-// 		alert("saving?");
-// 	}
-// });
 </script>

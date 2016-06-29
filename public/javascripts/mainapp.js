@@ -36,6 +36,7 @@ controllers.EditSelectCtrl = function ($scope, $http) {
 
 controllers.EditPageCtrl = function ($scope, $http, $routeParams) {
   $scope.pageURL = "/sites/"+ $routeParams.ref +".html";
+  $scope.ref = $routeParams.ref;
   var url = 'api/file/' + $routeParams.ref + '.html';
   $.get(url).then(function (data){
     $scope.fileData = data;
