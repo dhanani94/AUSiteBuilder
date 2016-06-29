@@ -2,7 +2,7 @@ var data = {};
 
 data.group1 = [
 	{name : "Taufiq Bha", ref : "TaufiqBha"},
-	{name : "Zoya Bai", ref : "Zoya Bai"},
+	{name : "Zoya Bai", ref : "ZoyaBai"},
 	{name : "Neha Momin", ref : "NehaMomin"},
 	{name : "Shayna Husein", ref : "ShaynaHusein"},
 	{name : "Mishaal Gilani", ref : "MishaalGilani"},
@@ -43,7 +43,7 @@ data.group2 = [
 	{name: "Arsh Momin", ref : "ArshMomin"},
 	{name: "Rahil Patel", ref : "RahilPatel"},
 	{name: "Zaryab Prasla", ref : "ZaryabPrasla"},
-	{name : "Zoya Bai", ref : "Zoya Bai"}
+	{name : "Zoya Bai", ref : "ZoyaBai"}
 	// {name : "Senior Staff", ref : "SeniorStaff"}
 ]
 
