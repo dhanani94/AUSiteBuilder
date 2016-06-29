@@ -5,10 +5,13 @@ var bodyParser 			= require('body-parser');
 var cookieParser 		= require('cookie-parser');
 var expressSession 	= require('express-session');
 var passport 				= require('passport');
+// var favicon = require('serve-favicon');
 
 var pages						= require('./routes/pages');
 var auth 						= require('./routes/auth');
 var api 						= require('./routes/api');
+
+// app.use(favicon('./public/images/favicon.ico'));
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
