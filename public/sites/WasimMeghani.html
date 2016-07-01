@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wasim Meghani</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+	<style> 
+
+
+.planet{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/planet.png) no-repeat center center;
+}
+
+.rocket{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket.png) no-repeat 50px center;
+
+	/* Chrome still requires the -webkit- prefix */
+	-webkit-animation:orbit 2s linear infinite;
+	animation:orbit 2s linear infinite;
+
+	transition:background-position 0.8s;
+}
+
+.container:hover .rocket{
+	background-position:80px center;
+}
+
+/* Define the keyframes of the animation */
+
+@-webkit-keyframes orbit {
+	from {
+		-webkit-transform:rotate(0deg);}
+	to {
+		-webkit-transform:rotate(360deg);
+	}
+}
+
+@keyframes orbit {
+	from {
+		transform:rotate(0deg);
+
+		/* I am including the -webkit-transform properties, because
+		   Chrome might start supporting keyframe without prefix in the future,
+		   but we can't be certain whether it will support prefix-free transform
+		   at the same time */
+
+		-webkit-transform:rotate(0deg);}
+	to {
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+	}
+}
+
+.color:hover
+{
+        background:#53a7ea;
+}
+	body {background:black; color:white;} </style>
+
+</head>
+<body>
+	<div class="container">
+	<div class="container">
+	<div class="planet"></div>
+	<div class="rocket"></div>
+	<div class="color"></div>
+</div>
+	<h1>Welcome to Wasim's Life</h1>
+	<p>Hi. My name is Wasim and I was born in Dallas, Texas on April 13, 1999. </p>
+	<img src="http://cityclubdallas.com/wp-content/uploads/revslider/home1/Dallas2.jpg" height="200" width="300">
+	<p>This is my website that I created during my time at Al-Ummah from scratch. Yes that means that I coded everything on this page using HTML code, which may sound very complicated but in reality, it's not that bad. Well to tell you guys a little bit about myself, I have a mom, a dad, and a younger sister who I sometimes claim to be my pet. That is because she can be really annoying but I still lowkey love her. To save you the effort of painting a mental picture of me and my sister, I attached a picture for your convenience. </p>
+	<img src="https://pbs.twimg.com/profile_images/722182574655688705/y3jckief.jpg" height="250" width="250">
+	</div>
+	
+</body>
+</html>
